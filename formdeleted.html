@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <title> Form registering </title>
+        <!--<link rel="stylesheet" type="text/css" href="css_folder/my_website.css" /> -->
+        <style type="text/css"> 
+
+            body{
+                background-color: rgba(225, 225, 225, 0.7)
+            
+            }
+            
+            #header{
+                position: fixed;
+                top: 0px;
+                width: 100%;
+                height: 80px;
+                background-color: whitesmoke;
+            }
+
+            #header img{
+                width: 70px;
+                height: 55px;
+                align-content: right;
+                float: left;
+                margin-left: 7px;
+                margin-top: 0px;
+            }
+
+            #header center{
+                font-size: 20px;
+                color: cornflowerblue;
+                float: center;
+                height: 55px;
+            }
+        
+            #header span{
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+                height: 55px;
+                width: calc(100% - 60px)
+            }
+            
+            #content{
+                width: 100%;
+            }
+            #leftpane{
+                width:12%; 
+                height:550px; 
+                background-color:#23213a; 
+                float:left;
+            }
+
+            #main{
+                width:58%; 
+                height:550px; 
+                background-color:#787a85; 
+                float:left;
+
+            }
+
+            /* ********************************* */
+            #main_2{
+                background-color: rgb(24%,25%,30%);
+                text-align: center;
+                opacity: 0.8;
+                width: 30%;
+                height: 550px; 
+                float: left;   
+            }
+            
+            #main_2 h3{
+                color: whitesmoke;
+                text-align: center;
+                font-size: 50px;
+            }
+
+            .login{
+                width: 300px;
+                height: 50px;
+                border-radius: 30px;
+                font-size: 1.5em;
+                padding-left: 15px;
+                padding-right: 10px; 
+            }
+
+            #login_btn{
+                width: 130px;
+                height: 40px;
+                border-radius: 30px;
+                text-align: center;
+            }
+
+            #para{
+                font-size: 1.5em;
+                font-family: Colonna MT;
+            }
+
+            .button{
+                width: 110px;
+                height: 50px;
+                border-radius: 6px;
+                font-size: 1.5em;
+                margin: 25px
+            }
+
+            input:focus{
+                background-color: #787a55;
+                opacity: 0.9;
+            }
+
+            input:valid{
+                color: blue;
+            }
+
+            input:invalid{
+                color:red;
+            }
+
+            .lnk_pg{
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 1.2em;
+                cursor: not-allowed;
+            }
+            
+            #footer{
+                width: 100%; 
+                height: 50px; 
+                background-color: whitesmoke;
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body bgcolor="white" text="black">
+
+
+        <div class="header"> <br />
+            <a href="My_image.html"> <img src="Images/logo.png" alt="Logo Here"/> </a> &nbsp; &nbsp; &nbsp;
+            <span>Ahmad personal website </span>
+            <center>
+                <a href="Ahmad_home.html" style="color:#49556d"> Home </a> &nbsp; &nbsp;
+                <a href="Attributes.html" style="color:#49556d"> My Attributes </a> &nbsp;
+                <a href="Gallery.html" style="color:#49556d"> My Gallery </a> &nbsp; &nbsp;
+                <a href="time_table.html" style="color:#49556d"> Time table </a> &nbsp; &nbsp;
+                
+                <font class="lnk_pg" style="color:#49556d"> Be my fan </font> 
+            </center>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div id='content'>
+            <div id="leftpane">
+
+                <table border="0" cellpadding="10" cellspacing="15">
+
+                    <tr>
+                        <td> <img src="Images/ahmad9.jpg" style="Width:100px; height:100px" /> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="Images/ahmad6.jpg" style="Width:100px; height:100px" /> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="Images/ahmad8.jpg" style="Width:100px; height:100px" /> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="Images/ahmad10.jpg" style="Width:100px; height:100px" /> </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div id="main">
+                <h3 align="center" style="font-size:2.5em"> Register Here </h3>
+
+                <center>
+                    <form id="form1">
+                        <table border="0" cellspacing="10">
+                            <tr>
+                                <td style="font-size:1.5em"> Surname: </td>
+                                <td> <input type="text" style="width:200px; height:30px; font-size:1em;" maxlength="16" required /> </td>
+                            </tr>
+
+                            <tr> 
+                                <td style="font-size:1.5em"> Firstname: </td> 
+                                <td> <input type="text" style="width:200px; height:30px; font-size:1em;" required /> </td> <br />         
+                            </tr>
+
+                            <tr> 
+                                <td style="font-size:1.5em"> Lastname: </td> 
+                                <td> <input type="text" style="width:200px; height:30px; font-size:1em;" required /> </td> <br />
+                            </tr>
+
+                            <tr>
+                                <td style="font-size:1.5em"> Sex: </td> 
+                                <td>  <input type="radio" name="gender" required /> Male &nbsp; &nbsp;
+                                    <input type="radio" name="gender" required /> Female </td>
+                            </tr>
+
+                            <tr> 
+                                <td style="font-size:1.5em"> Date of birth: </td> 
+                                <td> <input type="date" style="width:200px; height:30px; font-size:1em;" required /> </td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-size:1.5em"> State of origin: </td>
+                                <td> 
+                                    <select style="width:200px; height:30px; font-size:1em;" required >
+                                        <option> Kwara </option>
+                                        <option> Lagos </option>
+                                        <option> Kano </option>
+                                        <option> Jigawa </option>
+                                        <option> Imo </option>
+                                        <option> Gombe </option>
+                                        <option> Enugu </option>
+                                        <option> Ogun </option>
+                                        <option> Niger </option>
+                                        <option> FCT </option>
+                                        <option> Kebbi </option>
+                                        <option> Katsina </option>
+                                        <option> Kaduna </option>
+                                        <option> Osun </option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-size:1.5em"> Phone No. : </td> <td> 
+                                    <input type="number" style="width:200px; height:30px; font-size:1em" required </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" align="center" id="reset">
+                                    <input type="submit" value="Submit" class="button" />
+                                    <input type="reset" value="Clear" class="button" /> 
+                                </td>
+                            </tr>
+                        </table>
+                    </form>    
+                </center>              
+            
+        </div>
+
+        <div id="main_2">  
+                    <h3> Login User </h3>
+                    <p id="para"> Already a fan, Login here..... </p>
+                    
+                    <center>
+                        <form action="Ahmad_home.html" method="get" id="login">
+                            <input type="text" placeholder="Username" id="uname" class="login" maxlength="20" required /> <br /> <br />
+                            <input type="password" placeholder="Password" id="pswd" class="login" maxlength="20" required /> <br /> <br />
+                            <input type="submit" value="Login" id="login_btn" align="center" />
+                        </form>
+                    </center>
+
+                </div> 
+        </div>
+
+        <div id="footer">
+            <center>
+                &copy; 2020 <br />
+                Designed by Richmond Plc.
+            </center>
+        </div>
+
+    </body>
+
+</html>

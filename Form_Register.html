@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title> Form registering </title>
+        <link rel="stylesheet" type="text/css" href="css_folder/my_website.css" /> 
+        
+    </head>
+
+    <body bgcolor="white" text="black">
+
+
+        <div class="header"> <br />
+            <a href="My_image.html"> <img src="Images/logo.png" alt="Logo Here"/> </a> &nbsp; &nbsp; &nbsp;
+            <span>
+                Ahmad personal website  
+            </span>
+            <div class="navigator" style="margin-top: 60px;">
+                <ul>
+                    <li> <a href="Ahmad_home.html"> Home </a> </li>
+                    <li> <a href="Attributes.html"> My Attributes </a>
+                    <li> <a href="Gallery.html"> My Gallery </a> </li>
+                    <li> <a href="time_table.html"> Time table </a> </li>
+                    <li> <a href="#" class='active'> Be my fan </a> </li>
+                </ul>
+            </div>
+
+        <div class='container' style="margin-top: 0px; padding-top: 0px;">
+           
+            <div id="content">
+                <!--<h3 style="font-size:2.5em"> Register Here </h3>-->
+                <form id="form1" style="padding-top: 0px;">
+                    <table border="0" cellspacing="10">
+                        <tr>
+                            <th  colspan="2">Register Here </th>
+                        </tr>
+                        <tr>
+                            <td style="font-size:1.5em"> Surname: </td>
+                            <td> <input type="text" style="width:200px; height:30px; font-size:1em;" maxlength="16" required /> </td>
+                        </tr>
+
+                        <tr> 
+                            <td style="font-size:1.5em"> Firstname: </td> 
+                            <td> <input type="text" style="width:200px; height:30px; font-size:1em;" required /> </td> <br />         
+                        </tr>
+
+                        <tr> 
+                            <td style="font-size:1.5em"> Lastname: </td> 
+                            <td> <input type="text" style="width:200px; height:30px; font-size:1em;" required /> </td> <br />
+                        </tr>
+
+                        <tr>
+                            <td style="font-size:1.5em"> Sex: </td> 
+                            <td>  <input type="radio" name="gender" required /> Male &nbsp; &nbsp;
+                                <input type="radio" name="gender" required /> Female </td>
+                        </tr>
+
+                        <tr> 
+                            <td style="font-size:1.5em"> Date of birth: </td> 
+                            <td> <input type="date" style="width:200px; height:30px; font-size:1em;" required /> </td>
+                        </tr>
+
+                        <tr>
+                            <td style="font-size:1.5em"> State of origin: </td>
+                            <td> 
+                                <select style="width:200px; height:30px; font-size:1em;" required >
+                                    <option> Kwara </option>
+                                    <option> Lagos </option>
+                                    <option> Kano </option>
+                                    <option> Jigawa </option>
+                                    <option> Imo </option>
+                                    <option> Gombe </option>
+                                    <option> Enugu </option>
+                                    <option> Ogun </option>
+                                    <option> Niger </option>
+                                    <option> FCT </option>
+                                    <option> Kebbi </option>
+                                    <option> Katsina </option>
+                                    <option> Kaduna </option>
+                                    <option> Osun </option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="font-size:1.5em"> Phone No. : </td> <td> 
+                                <input type="number" style="width:200px; height:30px; font-size:1em" required </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center" id="reset">
+                                <input type="submit" value="Submit" class="button" />
+                                <input type="reset" value="Clear" class="button" /> 
+                            </td>
+                        </tr>
+                    </table>
+                </form>    
+                            
+            
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
